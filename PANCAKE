@@ -1,0 +1,13 @@
+def pancake(arr):
+    n = len(arr)
+
+    for size in range(n, 1, -1):
+
+        max = array.index(max(arr[:size]))
+
+        if max != 0:
+            arr[:max+1] = reversed(arr[:max+1])
+
+        arr[:size] = reversed(arr[:size])
+
+    return arr
